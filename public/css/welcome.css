@@ -1,0 +1,363 @@
+.welcom-page,
+.welcom-page * {
+box-sizing: border-box;
+}
+.welcom-page {
+width: 100%;
+height: 610px;
+position: relative;
+}
+.background {
+background: #ffffff;
+width: 100%;
+height: 610px;
+position: absolute;
+left: 0px;
+top: 0px;
+}
+
+
+
+/* _________________________drpdwnmnu_________________________
+ (*/
+  
+ .popuplgn {
+    /*  lgnbtn */
+   
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    height: 50%;
+    width: 130%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #ff3131;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    top: 37%;
+  left: 250%;
+  }
+
+  .dropdown {
+    float: none;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  /* _______________ */
+
+  #navbar__logo {
+    color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    left: 2%;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease-in-out;
+    float:left
+  }
+
+  .circle-logo {
+    background-color: #ff3131;
+    color: #ff3131;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 37%;
+    left: 250%;
+    cursor: pointer;
+    
+  }
+
+
+.welcome-container {
+width: 100%;
+height: 109px;
+position: absolute;
+left: 0px;
+top: 215px;
+
+}
+.wcontainer {
+/* border-style: solid;
+border-color: #000000;
+border-width: 1px; */
+width: 100%;
+height: 109px;
+position: absolute;
+left: 0px;
+top: 0px;
+}
+.txt {
+width: 476px;
+height: 58px;
+position: relative;
+left: 50%;
+top: 0%;
+translate: -50%  -60%;
+opacity: 0;
+align-content: center;
+}
+
+
+.welcome {
+color: #0e2c4b;
+
+font: 700 48px "Inter", sans-serif;
+position: absolute;
+
+}
+.username {
+color: #ff3535;
+text-align: center;
+font: 400 48px "Inter", sans-serif;
+position: absolute;
+left: 244px;
+top: 0px;
+}
+.play-container {
+width: 100%;
+height: 180px;
+position: absolute;
+left: 0px;
+top: 324px;
+}
+.play-button {
+width: 140px;
+height: 140px;
+position: relative;
+left: 50%;
+top: 60%;
+translate: -50%  -65%;
+}
+.r-circle {
+border-radius: 50%;
+border-style: solid;
+border-color: #ff3535;
+border-width: 5px;
+width: 140px;
+height: 140px;
+position: absolute;
+left: 0px;
+top: 0px;
+transition: all 0.6s ease-in-out;
+}
+.b-circle {
+background: #0e2c4b;
+border-radius: 50%;
+width: 112px;
+height: 112px;
+position: absolute;
+left: 14px;
+top: 14px;
+transition: all 0.2s ease-in-out;
+}
+
+#pb:hover .b-circle  { 
+    background-color: #ff3535;
+    width: 140px;
+    height: 140px;
+    left: 2px;
+    top: 1px; 
+}
+#pb:active .b-circle { 
+    opacity: 0;
+}
+
+.icon {
+width: 40px;
+height: 40px;
+position: absolute;
+left: 55px;
+top: 50px;
+transition: all 0.5s ease-in-out;
+}
+#pb:hover .icon  { 
+    width: 50px;
+    height: 50px;
+    left: 50px;
+    top: 45px;
+}
+
+.pcontainer {
+/* border-style: solid;
+border-color: #000000;
+border-width: 1px; */
+width: 100%;
+height: 180px;
+position: absolute;
+left: 0px;
+top: 0px;
+}
+
+
+
+/* ----------------------------------------------- level -- */
+
+
+.level-rg {
+    background: #ffffff;
+    width: 100%;
+    height: 610px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.3s ease-in-out;
+}
+
+.level-ps {
+    width: 663px;
+    height: 176px;
+    position: relative;
+    left: 50%;
+    top: 150%;
+    translate: -50%  -50%;
+}
+.easy {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    }
+
+#easy:hover .ellipse-6 { 
+    background-color: #ff3535;
+    width: 210px;
+    height: 210px;
+    left: -18px;
+    top: -18px;
+}
+#easy:hover .easy2 {
+    font-size: 37px;
+}
+
+.ellipse-6 {
+    background: #0e2c4b;
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: all 0.4s ease-in-out;
+}
+.easy2 {
+    color: #ffffff;
+    text-align: center;
+    font: 700 32px "Inter", sans-serif;
+    position: absolute;
+    left: 43.75px;
+    top: 64.06px;
+    width: 89.06px;
+    height: 45.31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s ease-in-out;
+}
+.meduim {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    left: 244px;
+    top: 0px;
+    cursor: pointer;
+}
+
+#meduim:hover .ellipse-6 { 
+    background-color: #ff3535;
+    width: 210px;
+    height: 210px;
+    left: -18px;
+    top: -18px;
+}
+#meduim:hover .meduim2{
+    font-size: 37px;
+}
+.meduim2 {
+    color: #ffffff;
+    text-align: center;
+    font: 700 32px "Inter", sans-serif;
+    position: absolute;
+    left: 21.75px;
+    top: 64.2px;
+    width: 131.51px;
+    height: 45.56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s ease-in-out;
+}
+.hard {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    left: 488px;
+    top: 1px;
+    cursor: pointer;
+}
+
+#hard:hover .ellipse-6 { 
+    background-color: #ff3535;
+    width: 210px;
+    height: 210px;
+    left: -18px;
+    top: -18px;
+}
+
+#hard:hover .hard2{
+    font-size: 37px;
+}
+
+.hard2 {
+    color: #ffffff;
+    text-align: center;
+    font: 700 32px "Inter", sans-serif;
+    position: absolute;
+    left: 43.75px;
+    top: 64.06px;
+    width: 89.06px;
+    height: 45.31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s ease-in-out;
+}
+
+
+
