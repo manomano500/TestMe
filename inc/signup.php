@@ -28,8 +28,9 @@ if(isset($_POST["submit"])){
     
     else{
         if($password == $Rpassword){
-        $sql="insert into users values ('','$username','$email','$hashpass')";
-        mysqli_query($link,$sql);
+            $sql="insert into users (usersUid, email, usersPd)
+            values ('$username','$email','$hashpass')";
+            mysqli_query($link,$sql);
        
         
         echo '<script type="text/JavaScript"> 
