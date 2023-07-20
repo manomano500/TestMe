@@ -193,11 +193,22 @@ include "inc/dbh.php";
 
 
     <!--------------------------------------- footer -->
-  
+   <!-- <div class="footer-contianer"> -->
+ <div class="footer">
+      <div>
+        <span class="right">
+            <br />
+            Mohamed <br />
+            Fatima <br />
+            Jouba
+        </span>
+        <span class="left"> TestMe © <br /></span>
+        <span class="under"> All rights reserved.</span>
+        </div>
+    </div>  
 
 
     <script src="public/js/t.js"></script>
-   <?php include "inc/footer.html"?>
 </body>
 
 </html>

@@ -24,7 +24,17 @@ include "dbh.php";
                 $_SESSION['username'] = $row['usersUid'];
                 header("Location: ../welcom.php ");
                 exit();
-            }    
+            } 
+            
+            else{
+                echo '<script type="text/JavaScript"> 
+            
+            window.alert("Invailed Username or Password ");
+            
+            window.history.back()
+
+            </script>';
+            }
         }
         
         else {
@@ -32,7 +42,7 @@ include "dbh.php";
             
             echo '<script type="text/JavaScript"> 
             
-            window.alert("Invailed Username or Email ");
+            window.alert("Invailed Username or Password ");
             
             window.history.back()
 

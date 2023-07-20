@@ -8,7 +8,7 @@
 </head>
 
 
-
+<body>
 <!---------------------------------------   navigation bar -->
 <nav class="navbar">
 
@@ -23,7 +23,7 @@
         
     </div>
     
-    </nav>
+    
 
 
    
@@ -134,8 +134,8 @@ hr{
         <span class="under"> All rights reserved.</span>
         </div>
     </div>  
-<!--   </div>
+ 
 
-<script src="js/t.js"></script>
+<script src="public/js/t.js"></script>
 </body>
 </html>
