@@ -4,10 +4,9 @@ session_start();
 
 
 include "inc/dbh.php";
-include "inc/login.php";?>
+include "inc/login.php";
 
-
-        
+        ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -101,11 +100,13 @@ include "inc/login.php";?>
 <div class="level-rg">
 
     <div class="level-ps">
-        <div class="easy" id="easy">
+        <div class="easy" id="easy" onclick="document.getElementById('esypg').click();">
         <div class="ellipse-6"></div>
 
         <div class="easy2">Easy</div>
         </div>
+
+        <a id="esypg" href="qz_easy.php" ></a>
 
         <div class="meduim" id="meduim">
         <div class="ellipse-6"></div>
