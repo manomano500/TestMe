@@ -11,6 +11,8 @@ if(isset($_POST["submit"])){
     $email=$_POST["eml"];
     $password=$_POST["pass"];
     $Rpassword=$_POST["Rpass"];
+    $hashpass= password_hash($password,PASSWORD_DEFAULT);
+
     $dubl= mysqli_query($link,"select * from users where usersUid='$username' or email='$email'");
 
     if(mysqli_num_rows($dubl)>0){
@@ -26,7 +28,7 @@ if(isset($_POST["submit"])){
     
     else{
         if($password == $Rpassword){
-        $sql="insert into users values ('','$username','$email','$password')";
+        $sql="insert into users values ('','$username','$email','$hashpass')";
         mysqli_query($link,$sql);
        
         

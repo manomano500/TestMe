@@ -1,4 +1,8 @@
- <?php
+
+<!-- this file is not being used
+ -->
+
+<?php
  include "dbh.php";
 function emptyInputSignup($name, $email, $username, $pwd){
 

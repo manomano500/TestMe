@@ -34,7 +34,7 @@ include "inc/login.php";?>
 <div id="myDropdown" class="dropdown-content">
  
     <a onclick="myFunction()" class="navbar__links"> About </a> 
-    <a href="contact.html" class="navbar__links"> Contact Us</a>
+    <a href="contact.php" class="navbar__links"> Contact Us</a>
    <a href="inc/logout.php" class=""  >Logout</a>
     
  
@@ -120,6 +120,7 @@ include "inc/login.php";?>
         </div>
     </div>
 </div>
+
 
 
 

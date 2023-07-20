@@ -5,12 +5,12 @@ include "dbh.php";
 
 
     if (isset($_POST["submit"])) {
+        $stmt= 
 
         $userName = $_POST["user"];
         $password = $_POST["pass"];
-       
-
-        $sql ="select * from users where usersPd= '$password' and (usersUid= '$userName' or email = '$userName' ); ";
+        
+        $sql ="select * from users where usersUid= '$userName' or email = '$userName' ; ";
 
         $result = mysqli_query($link, $sql);
         $row = mysqli_fetch_assoc($result);
@@ -18,11 +18,13 @@ include "dbh.php";
             
     
 
-        if($coun >0) {
-            session_start();
-            $_SESSION['username'] = $row['usersUid'];
-            header("Location: ../welcom.php ");
-            exit();
+        if($coun ==1) {
+            if(password_verify($password,$row['usersPd'])){
+                session_start();
+                $_SESSION['username'] = $row['usersUid'];
+                header("Location: ../welcom.php ");
+                exit();
+            }    
         }
         
         else {

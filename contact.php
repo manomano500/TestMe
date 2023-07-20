@@ -11,27 +11,24 @@
 
 <!---------------------------------------   navigation bar -->
 <nav class="navbar">
-<div class="navbar__container">
-<!-- logo -->
-<div>
-    <p class="circle-logo"><a href="index.php" id="navbar__logo">Testme</a></p>
-</div>
 
-<!-- menu -->
+    <div class="navbar__container">
+        <!-- logo -->
+        
+        <div id="logo-container">
+            <p class="circle-logo"> <a href="index.php" id="navbar__logo">Testme</a></p>
 
-
-<!-- navbar items : home, tech, sign up  -->
-<ul class="navbar__menu"></ul>
-<li class="navbar__item">
-   
-
+        </div>
+        <button class="dropbtn popuplgn" id="popuplgn" onclick=window.history.back();> Back </button>
+        
+    </div>
     
-</li>
-<li class="navbar__btn" >
-    <a href="../index.php" id="popuplgn"script="onclick=window.history.back();"> Back </a>
+    </nav>
+
+
    
-</li>
-</div>
+
+ 
 </nav>
 
 
@@ -42,7 +39,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 * {
     box-sizing: border-box;
 }
-#popuplgn{
+/* #popuplgn{
 margin-top: 25px ;
   font-size: 15px;
   display: flex;
@@ -59,7 +56,7 @@ margin-top: 25px ;
   color: #fff;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-}
+} */
 
 input[type=text], select, textarea {
 width: 100%;
@@ -124,17 +121,21 @@ hr{
 <br><br>
 
 
-<!---------------------------------------- footer -->
-<div class="footer">
-<span class="right">
-<br />
-Mohamed <br />
-Fatima <br />
-Jouba
-</span>
-<span class="left"> TestMe © <br /></span>
-<span class="under"> All rights reserved.</span>
-</div>
+ <!-- <div class="footer-contianer"> -->
+ <div class="footer">
+      <div>
+        <span class="right">
+            <br />
+            Mohamed <br />
+            Fatima <br />
+            Jouba
+        </span>
+        <span class="left"> TestMe © <br /></span>
+        <span class="under"> All rights reserved.</span>
+        </div>
+    </div>  
+<!--   </div>
+
 <script src="js/t.js"></script>
 </body>
 </html>
