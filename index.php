@@ -157,7 +157,7 @@ include "inc/dbh.php";
 
 
         <form action="inc/signup.php" method="post">
-            <button id="cls2" class="close">x</button>
+            <span role="button"  id="cls2" class="close">x</span>
 
             <p>Signup</p>
 
